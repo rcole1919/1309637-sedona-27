@@ -23,7 +23,53 @@
       
       <section class="filtres">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!-- Форма -->
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="infrastructure" value="Бассейн" checked>Бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="infrastructure" value="Парковка">Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="housing-type" value="Гостиница" checked>Гостиница
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="housing-type" value="Мотель" checked>Мотель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="housing-type" value="Апартаменты" checked>Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <label for="purchase">Стоимость в сутки (Р):</label>
+        <div>
+          <p>От 0</p>
+          <p>До 3000</p>
+        </div>
+        <input type="range" id="purchase" min="0" max="3000" step="100">
+        <button type="submit">Показать</button>
       </section> 
       
       <section>
