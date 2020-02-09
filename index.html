@@ -11,23 +11,25 @@
 		<header class="header">
 			<div class="nav-logo">
 				<a class="logo-link" href="index.html">
-					<img class="logo" src="img/logo.png" width="140" height="71" alt="Логотип Седоны">
+					<img class="logo" src="img/logo.png" width="140" height="72" alt="Логотип Седоны">
 				</a>
 			</div>
-			<nav class="nav" aria-label="Навигация по сайту Седона">
-				<div class="nav-item">
-					<a class="nav-link" href="#">Информация</a>
-				</div>
-				<div class="nav-item">
-					<a class="nav-link" href="#">Фото и видео</a>
-				</div>
-				<div class="nav-item">
-					<a class="nav-link" href="#">Карта штата</a>
-				</div>
-				<div class="nav-item">
-					<a class="nav-link" href="catalog.html">Гостиницы</a>
-				</div>
-			</nav>
+			<div class="wrap">
+				<nav class="nav" aria-label="Навигация по сайту Седона">
+					<div class="nav-item">
+						<a class="nav-link" href="#">Информация</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#">Фото и видео</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#">Карта штата</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="catalog.html">Гостиницы</a>
+					</div>
+				</nav>
+			</div>
 		</header>
 		
 		<main class="main-container">
@@ -40,8 +42,8 @@
 			
 			<section class="description">
 				<h2 class="visually-hidden">Описание Седоны</h2>
-					<div class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего</div>
-					<div class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
+				<div class="description-title">Седона — небольшой городок в Аризоне, заслуживающий большего</div>
+				<div class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
 			</section>
 			
 			<section class="advantages">
@@ -99,21 +101,21 @@
 				</div>
 			</section>
 			
-			<section class="advantages">
+			<section class="advantages-gray">
 				<h2 class="visually-hidden">Особенности Седоны</h2>
-				<div class="advantages-item gray">
+				<div class="advantages-item-gray">
 					<div class="advantages-title">Небольшая площадь</div>
 					<div class="advantages-text">- №3 -</div>
 					<div class="advantages-text">Все достопримечательности находятся очень близко</div>
 				</div>
 
-				<div class="advantages-item gray">
+				<div class="advantages-item-gray">
 					<div class="advantages-title">Красивая дорога</div>
 					<div class="advantages-text">- №4 -</div>
 					<div class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
 				</div>
 
-				<div class="advantages-item gray">
+				<div class="advantages-item-gray">
 					<div class="advantages-title">Мало туристов</div>
 					<div class="advantages-text">- №5 -</div>
 					<div class="advantages-text">Большинство едет в Гранд Каньон и толпится там</div>
@@ -137,51 +139,52 @@
 			<section class="form">
 				<h2 class="visually-hidden">Форма поиска гостиницыы</h2>
 				<form action="#" method="post">
-					<div class="form-item">
-						<div class="form-title">Дата заезда:</div>
-						<label class="form-label">
-							<input class="form-input" type="text" value="24 апреля 2017">
-							<img src="img/calendar.svg" width="21" height="22" alt="">
-						</label>
-					</div>
-					
-					<div class="form-item">
-						<div class="form-title">Дата выезда:</div>
-						<label class="form-label">
-							<input class="form-input" type="text" value="4 июля 2017">
-							<img src="img/calendar.svg" width="21" height="22" alt="">
-						</label>
-					</div>
-					
-					<div class="form-item">
-						<div class="form-title">Взрослые:</div>
-						<label class="form-label">
-							<img src="img/minus.svg" width="12" height="3" alt="">
-							<input class="form-input short" type="text" value="2">
-							<img src="img/plus.svg" width="11" height="11" alt="">
-						</label>
-					</div>
-
-					<div class="form-item">
-						<div class="form-title">Дети:</div>
-						<label class="form-label">
-							<img src="img/minus.svg" width="12" height="3" alt="">
-							<input class="form-input short" type="text" value="0">
-							<img src="img/plus.svg" width="11" height="11" alt="">
-						</label>
-					</div>
-					
-					<div class="form-item blue">
-						<button class="form-submit" type="submit">Найти</button>
-					</div>
+					<div class="form-wrap">
+						<div class="form-item">
+							<div class="form-title">Дата заезда:</div>
+							<label class="form-label">
+								<input class="form-input" type="text" value="24 апреля 2017">
+								<img src="img/calendar.svg" width="21" height="22" alt="">
+							</label>
+						</div>
+						
+						<div class="form-item">
+							<div class="form-title">Дата выезда:</div>
+							<label class="form-label">
+								<input class="form-input" type="text" value="4 июля 2017">
+								<img src="img/calendar.svg" width="21" height="22" alt="">
+							</label>
+						</div>
+						
+						<div class="form-item">
+							<div class="form-title">Взрослые:</div>
+							<label class="form-label-short">
+								<img src="img/minus.svg" width="12" height="3" alt="">
+								<input class="form-input-short" type="text" value="2">
+								<img src="img/plus.svg" width="11" height="11" alt="">
+							</label>
+							<div class="form-title-last">Дети:</div>
+							<label class="form-label-short">
+								<img src="img/minus.svg" width="12" height="3" alt="">
+								<input class="form-input-short" type="text" value="0">
+								<img src="img/plus.svg" width="11" height="11" alt="">
+							</label>
+						</div>
+						
+						<div class="form-item">
+							<button class="form-submit" type="submit">Найти</button>
+						</div>
+					</div>	
 				</form>
 			</section>
 		</main>
 		
 		<footer class="footer">
 			<div class="footer-contacts">
-        <div class="footer-text">#visitSEDONA</div>
-        <div class="footer-text">тел: +7 (495) 666-02-66</div>
+        <p class="footer-text">
+				#visitSEDONA<br>
+        тел: +7 (495) 666-02-66
+				</p>
       </div>
 			<div class="footer-social">
 				<a class="footer-social-link" href="#">

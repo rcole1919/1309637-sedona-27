@@ -61,12 +61,48 @@ a {
 
 .header {
 	width: 1200px;
-	font-style: bold;
+	height: 56px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	font-weight: bold;
+}
+
+.nav {
+	display: flex;
+		
 	background-color: white;
 }
 
+.nav-item {
+	width: 239px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-item:nth-child(2) {
+	margin-right: auto;
+}
+
+.header .wrap {
+	position: relative;
+	z-index: 1;
+	top: -74px;
+}
+
+.nav-logo {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
 .main-container {
-	width: 1200px;
+	width: 1200px;	
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .welcome {
@@ -74,82 +110,340 @@ a {
 	background-image: url("../img/background-photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
+	
+	text-align: center;
+}
+
+.welcome-logo {
+	display: inline-block;
+	margin-top: 76px;
+	margin-bottom: 22px;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	
+	height: 216px;
+	background-color: white;
+	text-align: center;
+}
+
+.description-title {
+	font-size: 21px;
+	font-weight: 700;
+
+	width: 440px;
+	margin-top: 61px;
+	align-self: center;
+	line-height: 26px;
+}
+
+.description-text {
+	margin-top: 38px;
+	margin-bottom: 56px;
+	line-height: 0;
 }
 
 .advantages-item {
+	display: flex;
 	background-color: #82B4D3;
 	color: white;
+	justify-content: space-between;
 }
 
-.advantages-item.gray {
+.advantages-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 400px;
+}
+
+.advantages-title {
+	font-size: 21px;
+	font-weight: 700;
+
+	width: 200px;
+	align-self: center;
+	margin-top: 46px;
+	margin-bottom: auto;
+}
+
+.advantages-text {
+	width: 280px;
+	align-self: center;
+}
+
+.advantages-text:last-child {
+	margin-bottom: 64px;
+	margin-top: auto;
+}
+
+.advantages-gray {
+	display: flex;
+	width: 1200px;
+	height: 256px;
+	text-align: center;
+}
+
+.advantages-item-gray {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
 	background-color: #EFEFEF;
 	color: black;
 }
 
-.footer {
-	width: 1200px;
-}
-
-.description-title,
-.advantages-title,
-.recommend-title,
-.footer-text {
-	font-size: 21px;
-	font-weight: bold;
-}
-
-.description {
-	background-color: white;
-}
-
-.description-title {
-	line-height: 26px;
-}
-
-.advantages-title,
-.advantages-text,
-.recommend-text {
-	line-height: 21px;
-}
-
 .recommend {
+	display: flex;
+	width: 1200px;
+	height: 330px;
+	text-align: center;
+	line-height: 0;
+	
 	background-color: white;
+}
+
+.recommend-item {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.recommend-img {
+	margin-top: auto;
+}
+
+.recommend-title {
+	font-size: 21px;
+	font-weight: 700;
+
+	margin-top: 40px;
+}
+
+.recommend-text {
+	width: 283px;
+	margin-top: 32px;
+	margin-bottom: 83px;
+	align-self: center;
 }
 
 .search {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	width: 1200px;
+	height: 291px;
+	
 	background-color: white;
 }
 
 .search-title {
+	margin-top: 53px;
+	
 	font-size: 30px;
 	font-weight: bold;
 }
 
 .search-text {
+	width: 434px;
+	align-self: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	
 	line-height: 24px;
 }
 
 .search-bt {
-	background-color: #776356;
+	width: 568px;
+	height: 86px;
+	border: none;
+	align-self: center;
+	margin-top: auto;
+	
 	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+	background-color: #776356;
 	color: white;
 }
 
-.form {
+.footer {
+	width: 1200px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	
 	background-color: white;
+	opacity: 0.9;
+}
+
+.footer .footer-social,
+.footer .footer-copyright {
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .footer-contacts {
+	width: 400px;
+	display: flex;
+	align-items: center;
+}
+
+
+.footer-text {
+	font-size: 21px;
 	font-weight: bold;
+	line-height: 31px;
+	margin-left: 132px;
+}
+
+
+.footer-social-link {
+	width: 46px;
+	height: 48px;
+	
+	background-color: #82B4D3;
+}
+
+.footer-social-link:first-child {
+	margin-right: 6px;
+}
+
+.footer-social-link:nth-child(2) {
+	margin-right: 6px;
+}
+
+.footer-social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 46px;
+	height: 48px;
+}
+
+.footer-copyright-text {
+	margin-right: 8px;
+}
+
+.form {
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -594px;
+	margin-bottom: 78px;
+	width: 458px;
+	height: 285px;
+	padding: 55px;
+	
+	background-color: white;
+	
+	font-weight: bold;
+}
+
+.form-wrap {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.form-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-item:first-child {
+	margin-bottom: 29px;
+}
+
+.form-item:nth-child(2) {
+	margin-bottom: 30px;
+}
+
+.form-item:nth-child(3) {
+	margin-bottom: 54px;
 }
 
 .form-label {
 	background-color: #F2F2F2;
+	
+	width: 325px;
+	height: 22px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 9px;
+	padding-left: 12px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
+.form-input {
+	background-color: #F2F2F2;
+	border: none;
+	
+	font-weight: bold;
+	text-transform: uppercase;
+	
+	width: 296px;
+}
+
+.form-label-short {
+	background-color: #F2F2F2;
+
+	width: 86px;
+	height: 22px;
+	padding-top: 8px;
+	padding-bottom: 8px; 
+	padding-right: 14px;
+	padding-left: 14px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-label-short:first-child {
+	margin-right: auto;
+}
+
+.form-input-short {
+	background-color: #F2F2F2;
+	border: none;
+	
+	font-weight: bold;
+	text-transform: uppercase;
+	
+	width: 38px;
+	margin-right: 13px;
+	margin-left: 13px;
+	text-align: center;
+}
+
 
 .form-submit {
 	background-color: #82B4D3;
 	color: white;
 	font-size: 21px;
+	
+	border: none;
+	
+	width: 100%;
+	height: 58px;
 }
 
-.footer-social-item {
-	background-color: #82B4D3;
+.form-title {
+	width: 112px;
+}
+
+.form-title-last {
+	width: 65px;
+	padding-left: 53px;
 }
