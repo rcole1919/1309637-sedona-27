@@ -1,0 +1,155 @@
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+		
+	background-color: #f2f2f2;
+	
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.welcome,
+.advantages-img,
+.recommend-img,
+.map-img,
+.form-label,
+.footer-social-item {
+	line-height: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.header {
+	width: 1200px;
+	font-style: bold;
+	background-color: white;
+}
+
+.main-container {
+	width: 1200px;
+}
+
+.welcome {
+	background-color: #82B4D3;
+	background-image: url("../img/background-photo.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.advantages-item {
+	background-color: #82B4D3;
+	color: white;
+}
+
+.advantages-item.gray {
+	background-color: #EFEFEF;
+	color: black;
+}
+
+.footer {
+	width: 1200px;
+}
+
+.description-title,
+.advantages-title,
+.recommend-title,
+.footer-text {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.description {
+	background-color: white;
+}
+
+.description-title {
+	line-height: 26px;
+}
+
+.advantages-title,
+.advantages-text,
+.recommend-text {
+	line-height: 21px;
+}
+
+.recommend {
+	background-color: white;
+}
+
+.search {
+	background-color: white;
+}
+
+.search-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.search-text {
+	line-height: 24px;
+}
+
+.search-bt {
+	background-color: #776356;
+	font-size: 21px;
+	color: white;
+}
+
+.form {
+	background-color: white;
+	font-weight: bold;
+}
+
+.form-label {
+	background-color: #F2F2F2;
+}
+
+.form-submit {
+	background-color: #82B4D3;
+	color: white;
+	font-size: 21px;
+}
+
+.footer-social-item {
+	background-color: #82B4D3;
+}
