@@ -36,53 +36,51 @@
 				
 				<section class="filtres">
 					<h2 class="visually-hidden">Фильтр гостиниц</h2>
-					<fieldset>
-						<legend>Инфраструктура:</legend>
-						<ul>
-							<li>
-								<label>
-									<input type="checkbox" name="infrastructure" value="Бассейн" checked>Бассейн
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="checkbox" name="infrastructure" value="Парковка">Парковка
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi
-								</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset>
-						<legend>Тип жилья:</legend>
-						<ul>
-							<li>
-								<label>
-									<input type="checkbox" name="housing-type" value="Гостиница" checked>Гостиница
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="checkbox" name="housing-type" value="Мотель" checked>Мотель
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="checkbox" name="housing-type" value="Апартаменты" checked>Апартаменты
-								</label>
-							</li>
-						</ul>
-					</fieldset>
-					<label for="purchase">Стоимость в сутки (Р):</label>
-					<div>
-						<p>От 0</p>
-						<p>До 3000</p>
-					</div>
-					<input type="range" id="purchase" min="0" max="3000" step="100">
-					<button type="submit">Показать</button>
+					<form class="filtres-form">
+						<div class="filtres-item">
+							<div class="filtres-title">Инфраструктура:</div>
+							<label class="filtres-label">
+								<input class="filtres-input" type="checkbox" checked>
+								Бассейн
+							</label>
+							<label class="filtres-label">
+								<input class="filtres-input" type="checkbox">
+								Парковка
+							</label>
+							<label class="filtres-label">
+								<input class="filtres-input" type="checkbox">
+								Wi-Fi
+							</label>
+						</div>
+						<div class="filtres-item">
+							<div class="filtres-title">Тип жилья:</div>
+							<label class="filtres-label">
+								<input class="filtres-input" type="checkbox" checked>
+								Гостиница
+							</label>
+							<label class="filtres-label">
+								<input class="filtres-input" type="checkbox" checked>
+								Мотель
+							</label>
+							<label class="filtres-label">
+								<input class="filtres-input" type="checkbox" checked>
+								Апартаменты
+							</label>
+						</div>
+						<div class="filtres-price">
+							<div class="filtres-title ">Стоимость в сутки (Р):</div>
+							<div class="filtres-price-range">
+								<div class="filtres-price-min">от 0</div>
+								<div class="filtres-price-sep"></div>
+								<div class="filtres-price-max">До 3000</div>
+							</div>
+							<div class="filtres-price-slider">
+							</div>
+							<div class="filtres-submit">
+								<button class="filtres-submit-btn" type="submit">Показать</button>
+							</div>
+						</div>
+					</form>
 				</section> 
 				
 				<section class="hotels-found">
