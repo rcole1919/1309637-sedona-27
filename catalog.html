@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона - Гостиницы</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -40,41 +41,54 @@
 						<div class="filtres-item">
 							<div class="filtres-title">Инфраструктура:</div>
 							<label class="filtres-label">
-								<input class="filtres-input" type="checkbox" checked>
+								<input class="filtres-input" type="checkbox" name="infrastructure" value="1" checked>
+                <span class="checkbox"></span>
 								Бассейн
 							</label>
 							<label class="filtres-label">
-								<input class="filtres-input" type="checkbox">
+								<input class="filtres-input" type="checkbox" name="infrastructure" value="2">
+                <span class="checkbox"></span>
 								Парковка
 							</label>
 							<label class="filtres-label">
-								<input class="filtres-input" type="checkbox">
+								<input class="filtres-input" type="checkbox" name="infrastructure" value="3">
+                <span class="checkbox"></span>
 								Wi-Fi
 							</label>
 						</div>
 						<div class="filtres-item">
 							<div class="filtres-title">Тип жилья:</div>
 							<label class="filtres-label">
-								<input class="filtres-input" type="checkbox" checked>
+								<input class="filtres-input" type="checkbox" name="housing" value="1" checked>
+                <span class="checkbox"></span>
 								Гостиница
 							</label>
 							<label class="filtres-label">
-								<input class="filtres-input" type="checkbox" checked>
+								<input class="filtres-input" type="checkbox" name="housing" value="2" checked>
+                <span class="checkbox"></span>
 								Мотель
 							</label>
 							<label class="filtres-label">
-								<input class="filtres-input" type="checkbox" checked>
+								<input class="filtres-input" type="checkbox" name="housing" value="3" checked>
+                <span class="checkbox"></span>
 								Апартаменты
 							</label>
 						</div>
 						<div class="filtres-price">
 							<div class="filtres-title ">Стоимость в сутки (Р):</div>
 							<div class="filtres-price-range">
-								<div class="filtres-price-min">от 0</div>
+								<div class="filtres-price-min">
+                  <label class="range-label" for="amount-min"></label>
+                  <input class="range-min" type="text" name="range-min" id="amount-min" readonly>
+                </div>
 								<div class="filtres-price-sep"></div>
-								<div class="filtres-price-max">До 3000</div>
+								<div class="filtres-price-max">
+                  <label class="range-label" for="amount-max"></label>
+                  <input class="range-max" type="text" name="range-max" id="amount-max" readonly>
+                </div>
 							</div>
 							<div class="filtres-price-slider">
+                <div class="slider-range" id="slider-range"></div>
 							</div>
 							<div class="filtres-submit">
 								<button class="filtres-submit-btn" type="submit">Показать</button>
@@ -213,6 +227,11 @@
 					</div>
 				</div>
 			</footer>
-		</div>	
+		</div>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/slider.js"></script>
+
 	</body>		
 </html>
