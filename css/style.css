@@ -557,14 +557,6 @@ a {
 	top: 8px;
 }
 
-/* Datepicker style */
-
-.ui-datepicker table {
-	background-color: white;
-}
-
-/**/
-
 .form-input {
 	width: 344px;
 	padding-top: 9px;
@@ -594,14 +586,15 @@ a {
 
 /* Numper style */
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+.form-input-short::-webkit-inner-spin-button,
+.form-input-short::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
-input[type="number"] {
+
+.form-input-short {
   -moz-appearance: textfield;
 }
 
@@ -1078,28 +1071,24 @@ input[type="number"] {
 /* Slider style*/
 
 .filtres-price-slider {
-	padding-left: 10px;
+	position: relative;
+	min-width: 318px;
+	height: 2px;
+	
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
-.ui-slider .ui-widget-header {
+.slider-range-inside {
+	width: 260px;
+	height: 2px;
+	
 	background-color: white;
 }
 
-.ui-widget.ui-widget-content {
-	background-color: rgba(255, 255, 255, 0.3);
-	border: none;
-}
-
-.ui-slider {
-	border: none;
-}
-
-.ui-slider-horizontal {
-  height: 2px;
-}
-
-.ui-slider-horizontal .ui-slider-handle {
-  top: -0.55em;
+.slider-range-min {
+	position: absolute;
+	z-index: 2;
+	top: -9px;
 	
 	height: 22px;
 	width: 20px;
@@ -1107,10 +1096,24 @@ input[type="number"] {
 	background-image: url("../img/filter-button.svg");
 }
 
-.ui-slider-horizontal .ui-slider-handle:hover {
+.slider-range-max {
+	position: absolute;
+	z-index: 2;
+	left: 252px;
+	top: -9px;
+	
+	height: 22px;
+	width: 20px;
+	
+	background-image: url("../img/filter-button.svg");
+}
+
+.slider-range-min:hover {
+	position: absolute;
+	z-index: 2;
 	cursor: pointer;
 	
-  top: -0.65em;
+  top: -10px;
 	
 	height: 24px;
 	width: 22px;
@@ -1118,12 +1121,18 @@ input[type="number"] {
 	background-image: url("../img/filter-button-hover.svg");
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-  border: none;
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-  background-color: rgba(0,0,0,0);
+.slider-range-max:hover {
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	
+	left: 251px;
+  top: -10px;
+	
+	height: 24px;
+	width: 22px;
+	
+	background-image: url("../img/filter-button-hover.svg");
 }
 
 .range-min,

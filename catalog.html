@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона - Гостиницы</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -79,16 +78,20 @@
 							<div class="filtres-price-range">
 								<div class="filtres-price-min">
                   <label class="range-label" for="amount-min"></label>
-                  <input class="range-min" type="text" name="range-min" id="amount-min" readonly>
+                  <input class="range-min" type="text" name="range-min" id="amount-min" value="От 0" readonly>
                 </div>
 								<div class="filtres-price-sep"></div>
 								<div class="filtres-price-max">
                   <label class="range-label" for="amount-max"></label>
-                  <input class="range-max" type="text" name="range-max" id="amount-max" readonly>
+                  <input class="range-max" type="text" name="range-max" id="amount-max" value="До 3000" readonly>
                 </div>
 							</div>
 							<div class="filtres-price-slider">
-                <div class="slider-range" id="slider-range"></div>
+                <div class="slider-range" id="slider-range">
+									<div class="slider-range-inside"></div>
+									<span class="slider-range-min"></span>
+									<span class="slider-range-max"></span>
+								</div>
 							</div>
 							<div class="filtres-submit">
 								<button class="filtres-submit-btn" type="submit">Показать</button>
@@ -231,9 +234,5 @@
 			</footer>
 		</div>
     
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/slider.js"></script>
-
 	</body>		
 </html>

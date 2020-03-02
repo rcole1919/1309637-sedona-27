@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -170,13 +169,17 @@
 								<div class="form-title">Взрослые:</div>
 								<div class="form-wrap-short">
                   <button class="quantity-adult-minus" type="button"> – </button>
-									<input class="form-input-short quantity-num-adult" type="number" name="adult" value="2">
+									<label>
+										<input class="form-input-short quantity-num-adult" type="number" name="adult" value="2">
+									</label>
                   <button class="quantity-adult-plus" type="button"> + </button>
 								</div>
 								<div class="form-title-last">Дети:</div>
 								<div class="form-wrap-short">
 									<button class="quantity-child-minus" type="button"> – </button>
-									<input class="form-input-short quantity-num-child" type="number" name="children" value="0">
+									<label>
+										<input class="form-input-short quantity-num-child" type="number" name="children" value="0">
+									</label>
 									<button class="quantity-child-plus" type="button"> + </button>
 								</div>
 							</div>
@@ -231,11 +234,7 @@
 			</footer>
 		</div>
     
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/datepicker.js"></script>
 		<script src="js/popup.js"></script>
-    <script src="js/number.js"></script>
 
   </body>
 </html>
