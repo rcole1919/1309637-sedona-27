@@ -1,3 +1,5 @@
+// Popup
+
 var open = document.querySelector(".search-btn");
 
 var popup = document.querySelector(".form");
@@ -6,3 +8,4 @@ var popup = document.querySelector(".form");
 	evt.preventDefault();
 	popup.classList.toggle("form-none");
   });
+	
