@@ -586,6 +586,7 @@ button {
 	100% {
     transform: translateY(0px);
 		visibility: hidden;
+		opacity: 0;
   }
 }
 
